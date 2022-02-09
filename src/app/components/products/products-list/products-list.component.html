@@ -1,0 +1,24 @@
+<table class="table table-light" *ngIf="state">
+  <tr>
+    <th>
+      ID
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Price
+    </th>
+    <th>
+      Quantity
+    </th>
+    <th>
+      Available
+    </th>
+    <th>
+      Selected
+    </th>
+  </tr>
+  <app-product-item [product]="product" *ngFor="let product of state.products" style="display: contents">
+  </app-product-item>
+</table>
